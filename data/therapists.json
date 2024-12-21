@@ -1,0 +1,16 @@
+{
+    "therapists": [
+        {
+            "name": "Dr. John Doe",
+            "location": "Mumbai, Maharashtra",
+            "contact": "+91 9876543210",
+            "image": "images/therapist1.jpg"
+        },
+        {
+            "name": "Dr. Jane Smith",
+            "location": "Bangalore, Karnataka",
+            "contact": "+91 9876543211",
+            "image": "images/therapist2.jpg"
+        }
+    ]
+}
