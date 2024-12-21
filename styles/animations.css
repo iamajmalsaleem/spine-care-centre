@@ -1,0 +1,65 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.introduction h1,
+.introduction p,
+.introduction ul {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.introduction h1 { animation-delay: 0.2s; }
+.introduction p { animation-delay: 0.4s; }
+.introduction ul { animation-delay: 0.6s; }
+
+.news-item,
+.course-item,
+.therapist-item,
+.faq-item {
+    opacity: 0;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.news-item:nth-child(1) { animation-delay: 0.1s; }
+.news-item:nth-child(2) { animation-delay: 0.3s; }
+.news-item:nth-child(3) { animation-delay: 0.5s; }
+
+.course-item:nth-child(1) { animation-delay: 0.1s; }
+.course-item:nth-child(2) { animation-delay: 0.3s; }
+.course-item:nth-child(3) { animation-delay: 0.5s; }
+
+.therapist-item:nth-child(1) { animation-delay: 0.1s; }
+.therapist-item:nth-child(2) { animation-delay: 0.3s; }
+
+.faq-item:nth-child(1) { animation-delay: 0.1s; }
+.faq-item:nth-child(2) { animation-delay: 0.3s; }
+.faq-item:nth-child(3) { animation-delay: 0.5s; }
+
+.cta-button {
+    animation: pulse 2s infinite;
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
